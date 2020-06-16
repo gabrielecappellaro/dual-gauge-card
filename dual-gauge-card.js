@@ -278,15 +278,6 @@ class DualGaugeCard extends HTMLElement {
         border: calc(var(--gauge-width) * 2 - 2px) solid var(--gauge-background-color);
       }
 
-      .gauge-title {
-        position: absolute;
-        bottom: 51%;
-        margin-bottom: 0.1em;
-        text-align: center;
-        width: 100%;
-        font-size: var(--title-font-size);
-      }
-
       .gauge-value, .gauge-label {
         position: absolute;
         bottom: 50%;
@@ -295,7 +286,7 @@ class DualGaugeCard extends HTMLElement {
       }
 
       .gauge-value {
-        margin-bottom:5%;
+        margin-bottom: 6%;
         font-size: var(--value-font-size);
         font-weight: bold;
       }
