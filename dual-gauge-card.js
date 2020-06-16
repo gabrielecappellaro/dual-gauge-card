@@ -170,7 +170,6 @@ class DualGaugeCard extends HTMLElement {
 
     this.nodes = {
       content: content,
-      title: content.querySelector('.gauge-title'),
       outer: {
         value: content.querySelector('.gauge-value-outer'),
         label: content.querySelector('.gauge-label-outer'),
@@ -180,13 +179,6 @@ class DualGaugeCard extends HTMLElement {
         label: content.querySelector('.gauge-label-inner'),
       }
     };
-
-    if (this.config.title) {
-      this.nodes.title.innerHTML = this.config.title;
-      this.nodes.title.addEventListener('click', event => {
-        this._showDetails('outer');
-      });
-    }
 
     this.nodes.outer.value.addEventListener('click', event => {
       this._showDetails('outer');
@@ -304,14 +296,14 @@ class DualGaugeCard extends HTMLElement {
       }
 
       .gauge-value {
-        margin-bottom:10%;
+        margin-bottom:5%;
         font-size: var(--value-font-size);
         font-weight: bold;
       }
 
       .gauge-label {
         font-size: var(--label-font-size);
-        margin-bottom:5%;
+        margin-bottom: 0.1em;
       }
 
       .gauge-value-outer, .gauge-label-outer {
