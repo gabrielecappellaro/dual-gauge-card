@@ -164,9 +164,6 @@ class DualGaugeCard extends HTMLElement {
 
           <div class="gauge-value gauge-value-inner"></div>
           <div class="gauge-label gauge-label-inner"></div>
-
-          <div class="gauge-title"></div>
-
         </div>
       </div>
     `;
@@ -307,14 +304,14 @@ class DualGaugeCard extends HTMLElement {
       }
 
       .gauge-value {
-        margin-bottom:15%;
+        margin-bottom:10%;
         font-size: var(--value-font-size);
         font-weight: bold;
       }
 
       .gauge-label {
         font-size: var(--label-font-size);
-        margin-bottom:10%;
+        margin-bottom:5%;
       }
 
       .gauge-value-outer, .gauge-label-outer {
