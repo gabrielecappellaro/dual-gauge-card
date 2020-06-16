@@ -219,9 +219,8 @@ class DualGaugeCard extends HTMLElement {
         --outer-angle: 90deg;
         --inner-angle: 90deg;
         --gauge-width: calc(var(--gauge-card-width) / 10.5);
-        --value-font-size: calc(var(--gauge-card-width) / 17);
-        --title-font-size: calc(var(--gauge-card-width) / 14);
-        --label-font-size: calc(var(--gauge-card-width) / 20);
+        --value-font-size: calc(var(--gauge-card-width) / 14);
+        --label-font-size: calc(var(--gauge-card-width) / 17);
 
         width: var(--gauge-card-width);
         padding: 16px;
